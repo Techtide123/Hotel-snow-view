@@ -53,7 +53,7 @@ document.write(`
   <div class="col-md-12 text-center">
     <p>
       &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved By Snow View Hotel ||
-      Powered by
+      Developed by
       <a href="https://tripstar.co.in" target="_blank">
         <img src="/images/trip-logo.png" alt="Trip Star Logo" style="height: 40px; vertical-align: middle; margin-left: 5px;" />
       </a>
