@@ -1,0 +1,90 @@
+.ftco-footer {
+  padding: 6em 0;
+  background-color: #232323;
+}
+
+.ftco-footer p,
+.ftco-footer a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.ftco-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ftco-footer .ftco-heading-2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.ftco-footer-social {
+  gap: 1rem;
+}
+
+.ftco-footer-social li a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.ftco-footer-social li a:hover {
+  background: #f5b642;
+  transform: translateY(-3px);
+}
+
+.ftco-footer-social li a span {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.block-23 ul li {
+  margin-bottom: 1rem;
+}
+
+.block-23 ul li:last-child {
+  margin-bottom: 0;
+}
+
+.block-23 ul li .icon {
+  color: #f5b642;
+  font-size: 1.2rem;
+  min-width: 25px;
+}
+
+.block-23 ul li a {
+  display: flex;
+  align-items: flex-start;
+}
+
+.block-23 ul li a:hover {
+  color: #fff;
+}
+
+.block-23 ul li .text {
+  line-height: 1.4;
+}
+
+.footer-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-copyright p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.footer-copyright img {
+  transition: opacity 0.3s ease;
+}
+
+.footer-copyright a:hover img {
+  opacity: 0.8;
+}
