@@ -28,6 +28,27 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		@keyframes spin {
+			from {
+				transform: rotate(0deg);
+			}
+
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		.spinner {
+			animation: spin 10s linear infinite;
+		}
+
+		.video-play:hover {
+			background: rgba(255, 255, 255, 1) !important;
+			transform: scale(1.1);
+		}
+	</style>
 </head>
 
 <body>
@@ -845,16 +866,43 @@
 					<div class="row d-flex">
 						<div class="col-md-4 d-flex ftco-animate">
 							<div class="blog-entry align-self-stretch">
-
-
-								<a href="#" class="block-20" style="background-image: url('images/you.jpg');">
-								</a>
+								<div class="video--spinner__wrapper"
+									style="background-image: url('images/Snow View Exterior And Reception/DSC_7217.jpeg'); background-size: cover; background-position: center; position: relative; height: 300px; display: flex; align-items: center; justify-content: center;">
+									<div class="rts__circle" style="position: relative; width: 200px; height: 200px;">
+										<svg class="spinner" viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+											<defs>
+												<path id="circle-1"
+													d="M50,50 m-37,0a37,37 0 1,1 74,0a37,37 0 1,1 -74,0">
+												</path>
+											</defs>
+											<text style="fill: #fff; font-size: 8px; font-weight: bold;">
+												<textPath xlink:href="#circle-1">Watch Now * Watch Now * Watch Full
+													Video *
+												</textPath>
+											</text>
+										</svg>
+										<div class="rts__circle--icon">
+											<a href="https://player.vimeo.com/video/1129829633?title=0&byline=0&portrait=0&autoplay=1"
+												class="video-play popup-vimeo"
+												style="display: inline-block; width: 60px; height: 60px; background: rgba(255,255,255,0.9); border-radius: 50%; text-align: center; line-height: 60px; color: #333; text-decoration: none; transition: all 0.3s ease;">
+												<img src="images/icon/play-2.png" alt="Play" style="    width: 30px;
+													margin-left: 7px;
+													height: 30px;
+													margin-bottom: 9px;">
+												<i class="flaticon-play "
+													style="font-size: 24px; margin-left: 4px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
 
 								<div class="text mt-3 text-center">
 									<div class="meta mb-2">
-										<div><a href="#">...</a></div>
-										<div><a href="#">Admin</a></div>
-										<div><a href="#" class="meta-chat"><span class="icon-chat"></span> .</a></div>
+										<div><a href="#"
+												data-mfp-src="https://vimeo.com/1129829633?title=0&byline=0&portrait=0&autoplay=1"
+												class="meta-chat popup-vimeo row justify-content-start d-flex align-items-end height-text"
+												aria-label="Open Snow View video"><span class="icon-chat"></span> .</a>
+										</div>
 									</div>
 									<h3 class="heading"><a href="#">Bestowing excellent hospitality to its every
 											category of guests</a></h3>
@@ -864,34 +912,84 @@
 						</div>
 						<div class="col-md-4 d-flex ftco-animate">
 							<div class="blog-entry align-self-stretch">
-								<a href="#" class="block-20" style="background-image: url('images/you.jpg');">
-								</a>
+								<div class="video--spinner__wrapper"
+									style="background-image: url('/images/Snow View Suite Room/DSC_7417.jpeg'); background-size: cover; background-position: center; position: relative; height: 300px; display: flex; align-items: center; justify-content: center;">
+									<div class="rts__circle" style="position: relative; width: 200px; height: 200px;">
+										<svg class="spinner" viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+											<defs>
+												<path id="circle-2"
+													d="M50,50 m-37,0a37,37 0 1,1 74,0a37,37 0 1,1 -74,0">
+												</path>
+											</defs>
+											<text style="fill: #fff; font-size: 8px; font-weight: bold;">
+												<textPath xlink:href="#circle-2">Watch Now * Watch Now * Watch Full
+													Video *
+												</textPath>
+											</text>
+										</svg>
+										<div class="rts__circle--icon"
+											style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
+											<a href="https://vimeo.com/1129835940?title=0&byline=0&portrait=0&autoplay=1"
+												class="video-play popup-vimeo"
+												style="display: inline-block; width: 60px; height: 60px; background: rgba(255,255,255,0.9); border-radius: 50%; text-align: center; line-height: 60px; color: #333; text-decoration: none; transition: all 0.3s ease;">
+												<img src="images/icon/play-2.png" alt="Play" style="    width: 30px;
+													margin-left: 7px;
+													height: 30px;
+													margin-bottom: 9px;">
+												<i class="flaticon-play" style="font-size: 24px; margin-left: 4px;"></i>
+											</a>
+										</div>
+									</div>
+								</div>
 								<div class="text mt-3 text-center">
 									<div class="meta mb-2">
-										<div><a href="#">...</a></div>
-										<div><a href="#">Admin</a></div>
 										<div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
 									</div>
 									<h3 class="heading"><a href="#">Bestowing excellent hospitality to its every
 											category of guests</a></h3>
-									<p><a href="#" class="btn-custom">Read more</a></p>
+									<p><a href="#" class="btn-custom"></a></p>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 d-flex ftco-animate">
 							<div class="blog-entry align-self-stretch">
-								<a href="#" class="block-20" style="background-image: url('images/you.jpg');">
-								</a>
+								<div class="video--spinner__wrapper"
+									style="background-image: url('/images/Exterior & Reception & Hall/DSC_7371.jpeg'); background-size: cover; background-position: center; position: relative; height: 300px; display: flex; align-items: center; justify-content: center;">
+									<div class="rts__circle" style="position: relative; width: 200px; height: 200px;">
+										<svg class="spinner" viewBox="0 0 100 100" style="width: 100%; height: 100%;">
+											<defs>
+												<path id="circle-3"
+													d="M50,50 m-37,0a37,37 0 1,1 74,0a37,37 0 1,1 -74,0">
+												</path>
+											</defs>
+											<text style="fill: #fff; font-size: 8px; font-weight: bold;">
+												<textPath xlink:href="#circle-3">Watch Now * Watch Now * Watch Full
+													Video *
+												</textPath>
+											</text>
+										</svg>
+										<div class="rts__circle--icon"
+											style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">
+											<a href="https://vimeo.com/1129838382?share=copy&fl=sv&fe=ci"
+												class="video-play popup-vimeo"
+												style="display: inline-block; width: 60px; height: 60px; background: rgba(255,255,255,0.9); border-radius: 50%; text-align: center; line-height: 60px; color: #333; text-decoration: none; transition: all 0.3s ease;">
+												<img src="images/icon/play-2.png" alt="Play" style="    width: 30px;
+													margin-left: 7px;
+													height: 30px;
+													margin-bottom: 9px;">
+												<i class="flaticon-play" style="font-size: 24px; margin-left: 4px;"></i>
+
+											</a>
+										</div>
+									</div>
+								</div>
 								<div class="text mt-3 text-center">
 									<div class="meta mb-2">
-
-										<div><a href="#">...</a></div>
-										<div><a href="#">Admin</a></div>
 										<div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
 									</div>
 									<h3 class="heading"><a href="#">Bestowing excellent hospitality to its every
 											category of guests</a></h3>
-									<p><a href="#" class="btn-custom">Read more</a></p>
+									<p><a href="#" class="btn-custom"></a></p>
 								</div>
 							</div>
 						</div>

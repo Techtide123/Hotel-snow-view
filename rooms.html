@@ -187,9 +187,74 @@
 				</div>
 			</div>
 		</div>
-	</section>
+		<div class="container-fluid">
+			<div class="row no-gutters justify-content-end">
+				<div class="col-md-12">
+					<div class="video-hero">
+						<iframe
+							src="https://player.vimeo.com/video/1129835940?title=0&byline=0&portrait=0&autoplay=1&muted=1&loop=1&background=0&controls=0"
+							frameborder="0" allow="autoplay; fullscreen; encrypted-media" allowfullscreen muted
+							style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	<script src="footer.js"></script>
+	</section>
+	<style>
+		/* @media (max-width: 768px) {
+			.video-hero {
+				height: 300px;
+			}
+		} */
+
+		@media (max-width: 576px) {
+			.video-hero {
+				height: 200px;
+			}
+		}
+	</style>
+	<script>
+		// Ensure video autoplay works
+		document.addEventListener('DOMContentLoaded', function () {
+			const iframe = document.querySelector('iframe[src*="vimeo"]');
+			if (iframe) {
+				// Add autoplay parameters if not present
+				let src = iframe.src;
+				if (src.indexOf('autoplay=1') === -1) {
+					src += (src.indexOf('?') === -1 ? '?' : '&') + 'autoplay=1&muted=1&loop=1&background=1';
+					iframe.src = src;
+				}
+
+				// Multiple attempts to ensure autoplay
+				setTimeout(function () {
+					try {
+						// Method 1: PostMessage to iframe
+						iframe.contentWindow.postMessage('{"method":"play"}', '*');
+					} catch (e) {
+						console.log('PostMessage autoplay failed:', e);
+					}
+				}, 1000);
+
+				// Method 2: Click simulation (for user interaction requirement)
+				setTimeout(function () {
+					try {
+						iframe.click();
+					} catch (e) {
+						console.log('Click simulation failed:', e);
+					}
+				}, 2000);
+
+				// Method 3: Reload iframe with fresh autoplay
+				setTimeout(function () {
+					if (!iframe.src.includes('autoplay=1')) {
+						iframe.src = iframe.src + '&autoplay=1&muted=1';
+					}
+				}, 3000);
+			}
+		});
+	</script>
 
 
 
@@ -220,6 +285,7 @@
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+	<script src="footer.js"></script>
 
 </body>
 
