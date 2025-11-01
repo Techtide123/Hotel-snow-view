@@ -13446,12 +13446,58 @@ textarea.form-control {
   padding: 1em 0;
   background: #232323;
 }
-@media (max-width: 480px) {
+
+@media (max-width: 767.98px) {
   .ftco-footer {
-    font-size: 28px;
+    font-size: 18px !important;
+  }
+
+  .ftco-footer p {
+    font-size: 18px !important;
+    line-height: 1.6;
+  }
+
+  .ftco-footer a {
+    font-size: 18px !important;
+  }
+
+  .ftco-footer .ftco-footer-widget ul li {
+    font-size: 18px;
+  }
+
+  .ftco-footer .ftco-footer-widget ul li a,
+  .ftco-footer .ftco-footer-widget ul.list-unstyled li a,
+  .ftco-footer .ftco-footer-widget ul li a.py-2.d-block {
+    font-size: 18px !important;
+  }
+
+  .ftco-footer .ftco-heading-2 {
+    font-size: 22px !important;
+  }
+
+  .ftco-footer .ftco-footer-widget h2 {
+    font-size: 24px !important;
+  }
+
+  .ftco-footer .block-23 ul li .text,
+  .ftco-footer .block-23 ul li span.text {
+    font-size: 18px !important;
+    line-height: 1.6;
+  }
+
+  .ftco-footer .block-23 ul li {
+    margin-bottom: 1.2rem;
+    font-size: 18px;
+  }
+
+  .ftco-footer .block-23 ul li a {
+    font-size: 18px !important;
+  }
+
+  .ftco-footer .container .row .col-md-12 p {
+    font-size: 16px !important;
   }
 }
-
 
 .ftco-footer .ftco-footer-logo {
   text-transform: uppercase;
@@ -13662,7 +13708,7 @@ textarea.form-control {
 
 @media (max-width: 767.98px) {
   .heading-section h2 {
-    font-size: 28px;
+    font-size: 16px;
   }
 }
 
