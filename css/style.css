@@ -13446,6 +13446,12 @@ textarea.form-control {
   padding: 1em 0;
   background: #232323;
 }
+@media (max-width: 480px) {
+  .ftco-footer {
+    font-size: 28px;
+  }
+}
+
 
 .ftco-footer .ftco-footer-logo {
   text-transform: uppercase;
